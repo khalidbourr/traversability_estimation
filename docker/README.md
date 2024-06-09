@@ -15,18 +15,21 @@ The provided Docker configuration ensures a consistent development environment, 
 Navigate to the directory containing the Dockerfile and run the following command to build the Docker image. This process can take several minutes as it installs all required dependencies and sets up the environment.
 
 ```bash
-docker build -t ros-traversability .```
+ docker build -t ros-traversability .
+```
 
 ### Running the Docker Container
 
 Before you can run the Docker container with GUI support, you need to ensure the environment is configured correctly for displaying GUIs from Docker to your host machine. Start by making sure the `ros_traversability_estimation.sh` script is executable:
 
 ```bash
-chmod +x ros_traversability_estimation.sh```
+chmod +x ros_traversability_estimation.sh
+```
 
 Then, execute the container using the script, which handles the necessary configurations for GPU usage and X server permissions:
 
 ```bash
-./ros_traversability_estimation.sh```
+./ros_traversability_estimation.sh
+```
 
 
